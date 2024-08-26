@@ -18,13 +18,10 @@ export default function Hero() {
                   <a href="https://github.com/s-gebby" target="_blank" rel="noopener noreferrer" className='bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors'>
                     GitHub
                   </a>
-                  <a href="https://github.com/s-gebby" target="_blank" rel="noopener noreferrer" className='bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors'>
+                  <a href="https://x.com/SilasGebhart" target="_blank" rel="noopener noreferrer" className='bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors'>
                     X
                   </a>
-                  <a href="https://github.com/s-gebby" target="_blank" rel="noopener noreferrer" className='bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors'>
-                    LinkedIn
-                  </a>
-                  <a href="https://github.com/s-gebby" target="_blank" rel="noopener noreferrer" className='bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors'>
+                  <a href="https://www.silasgebhart.com/" target="_blank" rel="noopener noreferrer" className='bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors'>
                     Portfolio
                   </a>
                 </div>

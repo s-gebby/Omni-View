@@ -3,6 +3,8 @@ import ReactPannellum from "react-pannellum";
 import Hero from './components/Hero'
 
 
+
+
 export default function App() {
   const [scene] = useState({
     image: "https://images.unsplash.com/photo-1505252772853-08ed4d526ceb?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -20,18 +22,22 @@ export default function App() {
     <div className='flex flex-col items-center justify-center p-4'>
       <Hero />
       <main className='w-full flex flex-row items-start justify-between'>
-        <div className='w-1/2 p-4 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg m-4'>
-          <h2 className='text-4xl mb-4 text-blue-600 p-4'>Welcome</h2>
+        <div className='w-1/2 p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg m-16'>
+          <h2 className='text-4xl text-blue-600 p-4'>Project Overview</h2>
           <p className='text-medium p-4 text-white'>
-            Explore our interactive panorama on the right. This demonstrates how to use the <span className='hover:animate-mystic-aura'>react-pannellum</span> library to create an immersive 360-degree panorama view.
+          This project was created to provide users with an immersive experience, allowing them to explore environments in a more engaging and interactive way. The idea stemmed from the need to view the interior of cars, planes, and helicopters in a way that offers a comprehensive view without physically being there. Traditional images and videos often fail to capture the full essence of a location, which is where a 360-degree panoramic view can make a significant difference.
           </p>
+          <h2 className='text-lg text-amber-300 py-2 px-4'>Technical Implementation</h2>
             <div>
             <p className='flex-row p-4 text-medium text-white'>
-              <span className='hover:animate-mystic-aura'>React-Pannellum</span> is a powerful library for creating immersive 360-degree panorama views. It allows you to seamlessly integrate interactive 360-degree panoramas into your web applications.
+            The application leverages a modern tech stack, including HTML5, TailwindCSS, and React.js, to create a responsive and visually appealing interface. The application uses Pannellum, a lightweight, standalone JavaScript library specifically created for rendering 360-degree panoramas.
+            </p>
+            <p className='flex-row p-4 text-medium text-white'>
+            The application is entirely frontend-based, with all static assets served directly from a web server, ensuring fast load times and an efficient user experience. The project is deployed on Netlify, taking advantage of its continuous deployment and global CDN for fast content delivery. Version control is managed using Git, with the repository hosted on GitHub, allowing for easy collaboration and automatic updates.
             </p>
           </div>
         </div>
-        <div className='w-1/2 h-[600px] border-8 border-white'>
+        <div className='w-1/2 h-[600px] p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg m-12'>
           {mounted && (
             <ReactPannellum
               id="pannellum-container"

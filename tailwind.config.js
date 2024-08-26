@@ -7,17 +7,11 @@ export default {
   theme: {
     extend: {
       animation: {
-        "blue-galaxy": "blue-galaxy 10s ease infinite",
+        "black-swoosh":"black-swoosh 2s ease infinite",
         "background-shine": "background-shine 2s linear infinite"
       },
       keyframes: {
-        "blue-galaxy": {
-          "0%": {"background": "radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)", "backgroundSize": "100% 100%", "backgroundPosition": "0% 100%", "backgroundBlendMode": "color-dodge, color-burn, color-burn, normal"},
-          "20%": {"background": "radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)", "backgroundSize": "105% 105%", "backgroundPosition": "10% 100%", "backgroundBlendMode": "color-dodge, color-burn, color-burn, normal"},
-          "40%": {"background": "radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)", "backgroundSize": "110% 300%", "backgroundPosition": "20% 80%", "backgroundBlendMode": "color-dodge, color-burn, color-burn, normal"},
-          "60%": {"background": "radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)", "backgroundSize": "115% 115%", "backgroundPosition": "30% 70%", "backgroundBlendMode": "color-dodge, color-burn, color-burn, normal"},
-          "80%": {"background": "radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)", "backgroundSize": "250% 120%", "backgroundPosition": "40% 60%", "backgroundBlendMode": "color-dodge, color-burn, color-burn, normal"},
-          "100%": {"background": "radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)", "backgroundSize": "100% 100%", "backgroundPosition": "0% 100%", "backgroundBlendMode": "color-dodge, color-burn, color-burn, normal"}
+        "black-swoosh":{"0%":{"background-size":"600% 100%","background-position":"left center","background-image":"linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8))"},"50%":{"background-size":"600% 100%","background-position":"right center","background-image":"linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8))"},"100%":{"background-size":"600% 100%","background-position":"left center","background-image":"linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8))"}
         },
         "background-shine": {
           "from": {
