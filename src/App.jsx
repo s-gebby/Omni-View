@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ReactPannellum from "react-pannellum";
+import Hero from './components/Hero'
 
 
 export default function App() {
@@ -7,7 +8,7 @@ export default function App() {
     image: "https://images.unsplash.com/photo-1505252772853-08ed4d526ceb?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pitch: 10,
     yaw: 180,
-    hfov: 110,
+    hfov: 150,
     autoLoad: true
   })
   const [mounted, setMounted] = useState(false);
@@ -19,7 +20,7 @@ export default function App() {
   return (
     <div className='flex flex-col items-center justify-center p-4'>
       <section className='w-full h-full'>
-        <header className='flex text-6xl items-center justify-center mt-8'>360-Panorama<span className='text-red-500'>View</span></header>
+      <Hero />
         <main className='w-full h-screen flex flex-col items-center justify-center'>
           <div className='w-3/4 h-3/4 mb-4'>
             {mounted && (
