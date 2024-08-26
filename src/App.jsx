@@ -20,13 +20,18 @@ export default function App() {
     <div className='flex flex-col items-center justify-center p-4'>
       <Hero />
       <main className='w-full flex flex-row items-start justify-between'>
-        <div className='w-1/2 p-4'>
-          <h2 className='text-4xl mb-4'>Welcome to our 360° View</h2>
-          <p className='text-lg'>
-            Explore our interactive panorama on the right. This demonstrates how to use the react-pannellum library to create an immersive 360-degree panorama view.
+        <div className='w-1/2 p-4 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg m-4'>
+          <h2 className='text-4xl mb-4 text-blue-600 p-4'>Welcome</h2>
+          <p className='text-medium p-4 text-white'>
+            Explore our interactive panorama on the right. This demonstrates how to use the <span className='hover:animate-mystic-aura'>react-pannellum</span> library to create an immersive 360-degree panorama view.
           </p>
+            <div>
+            <p className='flex-row p-4 text-medium text-white'>
+              <span className='hover:animate-mystic-aura'>React-Pannellum</span> is a powerful library for creating immersive 360-degree panorama views. It allows you to seamlessly integrate interactive 360-degree panoramas into your web applications.
+            </p>
+          </div>
         </div>
-        <div className='w-1/2 h-[600px]'>
+        <div className='w-1/2 h-[600px] border-8 border-white'>
           {mounted && (
             <ReactPannellum
               id="pannellum-container"

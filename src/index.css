@@ -5,3 +5,14 @@
 * {
   font-family: 'Fira Sans', sans-serif;
 }
+
+.hover-animate {
+  cursor: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.hover-animate:hover {
+  transform: scale(1.2);
+}
+
