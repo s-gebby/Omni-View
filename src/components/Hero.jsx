@@ -1,5 +1,4 @@
-
-
+import React from 'react'
 export default function Hero() {
   return (
     <div className='min-h-screen flex flex-col md:flex-row gap-8 items-center justify-center text-left w-full mx-auto p-6'>
