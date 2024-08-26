@@ -16,41 +16,36 @@ export default function App() {
   useEffect(() => {
     setMounted(true);
   }, []);
-
   return (
     <div className='flex flex-col items-center justify-center p-4'>
-      <section className='w-full h-full'>
       <Hero />
-        <main className='w-full h-screen flex flex-col items-center justify-center'>
-          <div className='w-3/4 h-3/4 mb-4'>
-            {mounted && (
-              <ReactPannellum
-                id="pannellum-container"
-                sceneId="firstScene"
-                imageSource={scene.image}
-                config={{
-                  autoLoad: true,
-                  pitch: scene.pitch,
-                  yaw: scene.yaw,
-                  hfov: scene.hfov,
-                }}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                }}
-              />
-            )}
-          </div>
-          <div className='w-3/4 text-center'>
-            <p className='text-lg'>
-              This is to show how to use the react-pannellum library to create a 360-degree panorama view.
-            </p>
-          </div>
-        </main>
-      </section>
-      <footer className='p-4'>
-        
-      </footer>
+      <main className='w-full flex flex-row items-start justify-between'>
+        <div className='w-1/2 p-4'>
+          <h2 className='text-4xl mb-4'>Welcome to our 360° View</h2>
+          <p className='text-lg'>
+            Explore our interactive panorama on the right. This demonstrates how to use the react-pannellum library to create an immersive 360-degree panorama view.
+          </p>
+        </div>
+        <div className='w-1/2 h-[600px]'>
+          {mounted && (
+            <ReactPannellum
+              id="pannellum-container"
+              sceneId="firstScene"
+              imageSource={scene.image}
+              config={{
+                autoLoad: true,
+                pitch: scene.pitch,
+                yaw: scene.yaw,
+                hfov: scene.hfov,
+              }}
+              style={{
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          )}
+        </div>
+      </main>
     </div>
   )
 }
